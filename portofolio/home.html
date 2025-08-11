@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Muhamad Adzka Lainufar</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+   <link rel="Icon" type="image/png" href="images/profilport.jpg">
+</head>
+<body>
+
+  <nav class="navbar glass">
+    <div class="nav-logo fade-in">Rapharexx</div>
+    <div class="hamburger fade-in" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+    <div class="nav-links fade-in" id="navLinks">
+      <a href="#home" class="nav-link">Home</a>
+
+      <div class="dropdown">
+      <a href="#about" class="nav-link">About▾</a>
+      <div class="dropdown-menu">
+        <a href="#about">About Me</a>
+        <a href="#skills">Skill</a>
+        <a href="#education">Education</a>
+      </div>
+      </div>
+
+      <a href="#portfolio">Portfolio</a>
+
+      <a href="#contact" class="nav-link">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Contoh konten -->
+   <section style="height: 105vh;" class="home fade-in" id="home">
+    <div class="container">
+      <div class="left" id="reveal-left">
+        <div class="photo-wrapper">
+          <img src="images/profilport.jpg" alt="Adzka Lainufar" class="profile-img"/>
+          <!-- Icon software -->
+          <div class="tech-icons">
+            <img src="assets/html.png" alt="HTML">
+            <img src="assets/css.png" alt="CSS">
+            <img src="assets/js.png" alt="JS">
+            <img src="assets/php.png" alt="PHP">
+            <img src="assets/phyton.png" alt="Python">
+          </div>
+        </div>
+      </div>
+      <div class="right" id="reveal-right">
+        <h1 class="greeting">Hi, I'm <span class="name">Muhamad Adzka Lainufar</span></h1>
+        <h2 class="typed-text"><span id="typed"></span></h2>
+        <p class="description">A passionate learner, problem-solver, and tech enthusiast who builds digital experiences with creativity and precision.</p>
+        <div class="social-icons">
+          <a href="https://github.com/Rexxscode"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/adzka-lainufar-3a7477379/"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/adzkalaiii?igsh=MTZwamFjcHkzbGU5bw=="><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <div class="buttons">
+          <a href="#about" class="btn neon">About Me</a>
+          <a href="#portfolio" class="btn neon">View My Work</a>
+          <a href="#contact" class="btn neon">Contact Me</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section id="about" class="about-section fade in">
+  <div class="about-container" data-aos="fade-up">
+    <div class="about-image">
+      <img src="images/profilport.jpg"
+           alt="Portrait of Muhammad Adzka Lainufar"
+           loading="lazy" />
+    </div>
+
+    <div class="about-content">
+      <h2>About Me</h2>
+      <p>
+        Hello! I am <strong>Muhammad Adzka Lainufar</strong>, a passionate and
+        continuously growing individual in the field of technology.
+        I love turning complex problems into simple, beautiful, and
+        intuitive digital solutions. My journey focuses on software
+        development, creativity, and innovation.
+      </p>
+
+      <div class="about-info">
+        <ul>
+          <li><strong>Full Name:</strong> Muhamad Adzka Lainufar</li>
+          <li><strong>Age:</strong> 15</li>
+          <li><strong>Address:</strong> Bekasi, West Java, Indonesia</li>
+          <li><strong>Nationality:</strong> Indonesian</li>
+        </ul>
+      </div>
+
+      <a href="assets/cv.pdf"
+         download
+         class="download-btn"
+         role="button">
+         Download CV
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Background Particles (place near top of <body>) -->
+<canvas id="particles" aria-hidden="true"></canvas>
+
+<section id="skills" class="skills-section">
+  <h2>🚀 My Skills</h2>
+  <div class="skills-container">
+
+    <div class="skill-card" data-skill="95" data-color1="#ff512f" data-color2="#dd2476">
+      <img src="assets/html.png" alt="HTML Logo" class="skill-icon" />
+      <h3>HTML</h3>
+      <div class="progress-bar"><span></span></div>
+    </div>
+
+    <div class="skill-card" data-skill="90" data-color1="#396afc" data-color2="#2948ff">
+      <img src="assets/css.png" alt="CSS Logo" class="skill-icon" />
+      <h3>CSS</h3>
+      <div class="progress-bar"><span></span></div>
+    </div>
+
+    <div class="skill-card" data-skill="75" data-color1="#f7971e" data-color2="#ffd200">
+      <img src="assets/js.png" alt="JavaScript Logo" class="skill-icon" />
+      <h3>JavaScript</h3>
+      <div class="progress-bar"><span></span></div>
+    </div>
+
+    <div class="skill-card" data-skill="25" data-color1="#00c6ff" data-color2="#0072ff">
+      <img src="assets/react.png" alt="React Logo" class="skill-icon" />
+      <h3>React</h3>
+      <div class="progress-bar"><span></span></div>
+    </div>
+
+    <div class="skill-card" data-skill="15" data-color1="#8360c3" data-color2="#2ebf91">
+      <img src="assets/php.png" alt="PHP Logo" class="skill-icon" />
+      <h3>PHP</h3>
+      <div class="progress-bar"><span></span></div>
+    </div>
+
+     <div class="skill-card" data-skill="45" data-color1="#8360c3" data-color2="#2ebf91">
+      <img src="assets/phyton.png" alt="Phyton Logo" class="skill-icon" />
+      <h3>Phython</h3>
+      <div class="progress-bar"><span></span></div>
+    </div>
+
+    <div class="skill-card" data-skill="5" data-color1="#ff4e50" data-color2="#f9d423">
+      <img src="assets/laravel.png" alt="Laravel Logo" class="skill-icon" />
+      <h3>Laravel</h3>
+      <div class="progress-bar"><span></span></div>
+    </div>
+
+    <div class="skill-card" data-skill="70" data-color1="#8e2de2" data-color2="#4a00e0">
+      <img src="assets/bootstrap.png" alt="Bootstrap Logo" class="skill-icon" />
+      <h3>Bootstrap</h3>
+      <div class="progress-bar"><span></span></div>
+    </div>
+
+    <div class="skill-card" data-skill="80" data-color1="#00f2fe" data-color2="#4facfe">
+      <img src="assets/tailwind.png" alt="Tailwind CSS Logo" class="skill-icon" />
+      <h3>Tailwind CSS</h3>
+      <div class="progress-bar"><span></span></div>
+    </div>
+
+  </div>
+</section>
+
+<section id="education" class="education-section">
+  <h2 class="section-title">Education</h2>
+  <div class="timeline">
+
+    <!-- Item 1 -->
+    <div class="timeline-item">
+      <div class="timeline-date">2016 - 2022</div>
+      <div class="timeline-content">
+        <div class="logo-container">
+          <img src="assets/06.png" alt="School Logo">
+        </div>
+        <div>
+          <h3>Wanasari 06 State Elementary School</h3>
+          <h4>Academic Basics</h4>
+          <p>GPA : 89.9</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Item 2 -->
+    <div class="timeline-item">
+      <div class="timeline-date">2022 - 2025</div>
+      <div class="timeline-content">
+        <div class="logo-container">
+          <img src="assets/ulil.png" alt="School Logo">
+        </div>
+        <div>
+          <h3>Ulil Albab Integrated Islamic Junior High School</h3>
+          <h4>Islamic Academic</h4>
+          <p>GPA : 88.9</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Item 3 -->
+    <div class="timeline-item">
+      <div class="timeline-date">2025 - Now</div>
+      <div class="timeline-content">
+        <div class="logo-container">
+          <img src="assets/telkom.png" alt="School Logo">
+        </div>
+        <div>
+          <h3>Telekomunikasi Telesansi Vocational High School</h3>
+          <h4>Software Engineering</h4>
+          <p>GPA : - </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-date">Coming Soon</div>
+      <div class="timeline-content">
+        <div class="logo-container">
+          <img src="assets/ITB.png" alt="School Logo">
+        </div>
+        <div>
+          <h3>Bandung Institute Of Technology </h3>
+          <h4>Informatics Engineering</h4>
+          <p>GPA : - </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- HTML -->
+<section id="experience" class="experience-section">
+  <h2 class="experience-title">Experience</h2>
+
+  <div class="career-journey">
+    <!-- Entry 1 (kiri) -->
+    <div class="career-entry">
+      <div class="career-item left">
+        <div class="career-card" tabindex="0" aria-label="Front-End Developer card">
+          <div class="career-card-inner">
+            <div class="career-card-front">
+              <h3>Front-End Developer</h3>
+              <span>2023 - 2024 | Technorex Official</span>
+              <p>Worked on modern UI/UX websites with interactive features.</p>
+            </div>
+            <div class="career-card-back">
+              <h4>Skills Used</h4>
+              <p>HTML, CSS, JavaScript, React</p>
+              <div class="skill-progress">
+                <label>HTML</label>
+                <div class="skill-progress-bar" style="--value:90%"></div>
+                <label>CSS</label>
+                <div class="skill-progress-bar" style="--value:85%"></div>
+                <label>JavaScript</label>
+                <div class="skill-progress-bar" style="--value:80%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="career-center">
+        <span class="career-dot" aria-hidden="true"></span>
+      </div>
+
+      <!-- right column intentionally empty for this row -->
+      <div class="career-item right"></div>
+    </div>
+
+    <!-- Entry 2 (kanan) -->
+    <div class="career-entry">
+      <div class="career-item left"></div>
+
+      <div class="career-center">
+        <span class="career-dot" aria-hidden="true"></span>
+      </div>
+
+      <div class="career-item right">
+        <div class="career-card" tabindex="0" aria-label="Freelance Web Designer card">
+          <div class="career-card-inner">
+            <div class="career-card-front">
+              <h3>Freelance Web Designer</h3>
+              <span>2022 - 2023 | Self-employed</span>
+              <p>Designed modern, responsive websites for small businesses.</p>
+            </div>
+            <div class="career-card-back">
+              <h4>Skills Used</h4>
+              <p>Figma, HTML, Tailwind CSS</p>
+              <div class="skill-progress">
+                <label>Figma</label>
+                <div class="skill-progress-bar" style="--value:88%"></div>
+                <label>Tailwind CSS</label>
+                <div class="skill-progress-bar" style="--value:82%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tambah entry baru: buat blok career-entry baru, tempatkan konten di .left atau .right -->
+  </div>
+</section>
+
+<!-- ===== PORTFOLIO SECTION ===== -->
+<section id="portfolio" class="portfolio-section">
+  <div class="portfolio-header">
+    <h2 class="portfolio-title">Portfolio</h2>
+    <div class="portfolio-stats">
+      <div class="stat-card">
+        <span class="stat-number" data-target="20">0</span><span class="plus">+</span>
+        <p>Projects Completed</p>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number" data-target="5">0</span><span class="plus">+</span>
+        <p>Projects In Progress</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Search -->
+  <div class="portfolio-search">
+    <input type="text" id="searchProject" placeholder="Search project...">
+  </div>
+
+  <!-- Filter Buttons -->
+  <div class="portfolio-filter">
+    <button class="filter-btn active" data-filter="all">All <span class="count"></span></button>
+    <button class="filter-btn" data-filter="web">Web <span class="count"></span></button>
+     <button class="filter-btn" data-filter="dekstop">Dekstop <span class="count"></span></button>
+    <button class="filter-btn" data-filter="mobile">Mobile <span class="count"></span></button>
+    <button class="filter-btn" data-filter="uiux">UI/UX <span class="count"></span></button>
+  </div>
+
+  <!-- Portfolio Grid -->
+  <div class="portfolio-grid">
+    <!-- Example Project -->
+    <div class="project-card" data-category="web">
+      <div class="project-thumb">
+        <img src="project/project1.jpg" alt="Project 1">
+      </div>
+      <div class="project-overlay">
+        <h3>Portfolio Website</h3>
+        <p>Responsive Portfolio Website</p>
+        <button class="view-detail" 
+        data-title="Portfolio Website" 
+        data-client="Muhamad Adzka Lainufar"
+        data-desc="A sleek and interactive personal portfolio website showcasing my skills, projects, and achievements in technology."
+        data-demo="https://demo.com"
+        data-source="https://github.com/project"
+        data-tech='["HTML","CSS3","JavaScript","TypedJS","AOS","ScrollRevealJS"]'
+        data-img="project/project1.jpg">
+  View Details
+</button>
+
+      </div>
+    </div>
+
+    
+  </div>
+
+  <!-- Load More -->
+  <div class="load-more-wrapper">
+    <button id="loadMoreBtn">Load More</button>
+  </div>
+</section>
+
+<!-- ===== MODAL DETAIL ===== -->
+<div id="projectModal" class="project-modal">
+  <div class="modal-content">
+    <span class="modal-close">&times;</span>
+    <div class="modal-header">
+      <img id="modalImg" src="project/project1.jpg" alt="Project Preview">
+    </div>
+    <div class="modal-body">
+      <h3 id="modalTitle"></h3>
+      <p class="modal-client">Client: <span id="modalClient"></span></p>
+      <div class="modal-tech">
+        <h4>Tech Stack:</h4>
+        <div id="modalTech"></div>
+      </div>
+      <p id="modalDesc"></p>
+      <div class="modal-links">
+        <a id="modalDemo" target="_blank" class="btn-link">Live Demo</a>
+        <a id="modalSource" target="_blank" class="btn-link">Source Code</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<script>
+// ===== ANIMASI ANGKA =====
+document.querySelectorAll('.stat-number').forEach(num => {
+  let target = +num.getAttribute('data-target');
+  let count = 0;
+  let update = setInterval(() => {
+    count++;
+    num.textContent = count;
+    if (count >= target) clearInterval(update);
+  }, 30);
+});
+
+// ===== FILTER =====
+const filterBtns = document.querySelectorAll('.filter-btn');
+const projectCards = document.querySelectorAll('.project-card');
+
+filterBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    filterBtns.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    let filter = btn.getAttribute('data-filter');
+    projectCards.forEach(card => {
+      card.style.display = (filter === 'all' || card.dataset.category === filter) ? 'block' : 'none';
+    });
+  });
+});
+
+// ===== SEARCH =====
+document.getElementById('searchProject').addEventListener('input', e => {
+  let val = e.target.value.toLowerCase();
+  projectCards.forEach(card => {
+    let title = card.querySelector('h3').textContent.toLowerCase();
+    card.style.display = title.includes(val) ? 'block' : 'none';
+  });
+});
+
+// ===== MODAL DETAIL =====
+document.querySelectorAll('.view-detail').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.getElementById('modalTitle').textContent = btn.dataset.title;
+    document.getElementById('modalClient').textContent = btn.dataset.client;
+    document.getElementById('modalDesc').textContent = btn.dataset.desc;
+    document.getElementById('modalImg').src = btn.dataset.img;
+    document.getElementById('modalDemo').href = btn.dataset.demo;
+    document.getElementById('modalSource').href = btn.dataset.source;
+
+    let techHTML = '';
+    JSON.parse(btn.dataset.tech).forEach(tech => {
+      techHTML += `<span class="tech-badge">${tech}</span>`;
+    });
+    document.getElementById('modalTech').innerHTML = techHTML;
+
+    document.getElementById('projectModal').classList.add('show');
+  });
+});
+document.querySelector('.modal-close').addEventListener('click', () => {
+  document.getElementById('projectModal').classList.remove('show');
+});
+</script>
+
+<section id="contact" class="contact-section">
+  <div class="contact-wrapper">
+    <h2 class="contact-title">Let's Get in Touch</h2>
+    <p class="contact-subtitle">Fill in this form to contact me. I will reply as soon as possible 🚀</p>
+
+    <form id="contactForm" class="contact-form" action="https://formspree.io/f/yourformid" method="POST">
+      <div class="form-group">
+        <input type="text" name="name" placeholder="Nama" required>
+        <span class="error-msg"></span>
+      </div>
+      <div class="form-group">
+        <input type="email" name="email" placeholder="Email" required>
+        <span class="error-msg"></span>
+      </div>
+      <div class="form-group">
+        <textarea name="message" placeholder="Pesan Anda..." required></textarea>
+        <span class="error-msg"></span>
+      </div>
+
+      <div class="button-group">
+        <button type="submit" class="send-btn">
+          <span class="btn-text">Kirim Pesan</span>
+          <span class="loader"></span>
+        </button>
+        <a href="#"
+           target="_blank" class="wa-btn">Chat via WhatsApp</a>
+      </div>
+      <p id="form-status" class="form-status"></p>
+    </form>
+  </div>
+</section>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const form = document.getElementById("contactForm");
+  const status = document.getElementById("form-status");
+  const loader = document.querySelector(".loader");
+  const btnText = document.querySelector(".btn-text");
+
+  form.addEventListener("submit", async function(e) {
+    e.preventDefault();
+    
+    // Reset pesan error
+    document.querySelectorAll(".error-msg").forEach(e => e.textContent = "");
+
+    let valid = true;
+    form.querySelectorAll("input, textarea").forEach(input => {
+      if (!input.value.trim()) {
+        input.nextElementSibling.textContent = "Field ini wajib diisi";
+        valid = false;
+      } else if (input.type === "email" && !/\S+@\S+\.\S+/.test(input.value)) {
+        input.nextElementSibling.textContent = "Email tidak valid";
+        valid = false;
+      }
+    });
+
+    if (!valid) return;
+
+    loader.style.display = "inline-block";
+    btnText.textContent = "Mengirim...";
+    
+    try {
+      const response = await fetch(form.action, {
+        method: form.method,
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      });
+
+      loader.style.display = "none";
+      btnText.textContent = "Kirim Pesan";
+
+      if (response.ok) {
+        status.textContent = "✅ Pesan berhasil terkirim!";
+        form.reset();
+      } else {
+        status.textContent = "❌ Terjadi kesalahan. Coba lagi.";
+      }
+    } catch (error) {
+      loader.style.display = "none";
+      btnText.textContent = "Kirim Pesan";
+      status.textContent = "⚠️ Tidak dapat mengirim pesan.";
+    }
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  /* =========================
+     NAVBAR TOGGLE & HIGHLIGHT
+  ==========================*/
+  function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("show");
+  }
+  window.toggleMenu = toggleMenu;
+
+  const sections = document.querySelectorAll("section");
+  const navLinks = document.querySelectorAll(".nav-link");
+
+  window.onscroll = () => {
+    let current = "";
+    sections.forEach((sec) => {
+      const sectionTop = sec.offsetTop;
+      if (pageYOffset >= sectionTop - 70) {
+        current = sec.getAttribute("id");
+      }
+    });
+    navLinks.forEach((link) => {
+      link.classList.remove("active");
+      if (link.getAttribute("href") === "#" + current) {
+        link.classList.add("active");
+      }
+    });
+  };
+
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function (e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute("href"));
+      if (target) {
+        window.scrollTo({
+          top: target.offsetTop - 60,
+          behavior: "smooth"
+        });
+      }
+      document.getElementById("navLinks").classList.remove("show");
+    });
+  });
+
+  /* =========================
+     TYPED.JS
+  ==========================*/
+  new Typed('#typed', {
+    strings: [
+      'Fullstack Developer', 
+      'UI/UX Designer',
+      'AI Enthusiast', 
+      'Open Source Contributor',
+      'Mobile App Developer',
+      'Game Programmer',
+      'Cyber Security Learner',
+      'Problem Solver',
+      'Cloud Enthusiast',
+      'Tech Visionary'
+    ],
+    typeSpeed: 60,
+    backSpeed: 30,
+    loop: true
+  });
+
+  // ===== MODAL DETAIL =====
+document.querySelectorAll('.view-detail').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.getElementById('modalTitle').textContent = btn.dataset.title;
+    document.getElementById('modalClient').textContent = btn.dataset.client;
+    document.getElementById('modalDesc').textContent = btn.dataset.desc;
+
+    // FIX: langsung gunakan path dari data-img
+    document.getElementById('modalImg').src = btn.dataset.img;
+
+    document.getElementById('modalDemo').href = btn.dataset.demo;
+    document.getElementById('modalSource').href = btn.dataset.source;
+
+    let techHTML = '';
+    JSON.parse(btn.dataset.tech).forEach(tech => {
+      techHTML += `<span class="tech-badge">${tech}</span>`;
+    });
+    document.getElementById('modalTech').innerHTML = techHTML;
+
+    document.getElementById('projectModal').classList.add('show');
+  });
+});
+
+document.querySelector('.modal-close').addEventListener('click', () => {
+  document.getElementById('projectModal').classList.remove('show');
+});
+
+
+  /* =========================
+     AOS
+  ==========================*/
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+});
+
+</script>
+
+
+
+<script src="js/script.js"></script>
+<script src="js/particles.js"></script>
+
+</body>
+</html>
